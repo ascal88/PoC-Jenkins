@@ -7,6 +7,6 @@ public class RestController {
 
     @GetMapping(value = "/**")
     public String hello() {
-        return "Sti cazzi: "+System.getenv("HOSTNAME");
+        return "You are on: "+System.getenv("HOSTNAME");
     }
 }
